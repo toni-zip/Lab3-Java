@@ -1,3 +1,7 @@
+/*
+Antonio Francisco Lacerda Pereira 10436919
+Henrique Totti Ulbricht Lapa 10436584
+*/
 package dev.toni;
 import static java.lang.System.out;
 import java.util.Scanner;
