@@ -9,13 +9,13 @@ import java.util.List;
 
 public class GerenciadorNomesBD implements GerenciadorNomes {
     private Connection connection;
+    private String url = "jdbc:postgresql://db.tbrqupthkvjlkqfoogwz.supabase.co:5432/postgres";
+    private String user = "postgres";
+    private String password = "senha idiota";
+
 
     public GerenciadorNomesBD() {
-        String ipv4 = "192.168.1.100"; 
-        String url = "jdbc:postgresql://" + ipv4 + ":5432/nomesdb";
-        String user = "seu_usuario";
-        String password = "sua_senha";
-
+      
         try {
             System.out.println("Tentando conectar ao banco de dados...");
             connection = DriverManager.getConnection(url, user, password);
